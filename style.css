@@ -1,12 +1,23 @@
-.courses {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 5%;
-    margin-left: 5%;
-    margin-bottom: 5%;
-}
-
 .ques {
     margin-left: 20%;
     margin-right: 20%;
+}
+
+.shesh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+@media only screen and (max-width:420px) {
+
+    .saj {
+        display: flex;
+        flex-direction: column;
+
+    }
+
 }
