@@ -12,12 +12,44 @@
     padding-bottom: 5%;
 }
 
+.courses {
+    display: flex;
+    border: 2px solid gray;
+    border-radius: 7px;
+}
+
+.edit {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
 @media only screen and (max-width:420px) {
 
-    .saj {
-        display: flex;
-        flex-direction: column;
+
+    .edit {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
 
     }
 
+    .courses {
+        display: flex;
+        flex-direction: column;
+
+
+
+    }
+
+    .pic {
+        width: 100%;
+    }
 }
+
+@media screen and (min-width:421px) and (max-width:834px) {
+    .edit {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
